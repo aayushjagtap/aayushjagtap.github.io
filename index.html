@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aayush Jagtap — Resume</title>
+  <meta name="description" content="Resume of Aayush Jagtap — Computer Science student at Michigan State University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Ctext y='50' x='6' font-size='48'%3E%A9%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="id-block">
+        <h1 class="name">Aayush Jagtap</h1>
+        <p class="title">Computer Science — Michigan State University</p>
+      </div>
+
+      <div class="contact">
+        <a href="tel:+12487870379" class="chip" aria-label="Phone">(248) 787-0379</a>
+        <a href="mailto:apj1905@gmail.com" class="chip">apj1905@gmail.com</a>
+        <a href="https://www.linkedin.com/in/aayush-jagtap" class="chip" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost" title="Toggle theme" aria-label="Toggle theme">🌗</button>
+        <button id="printBtn" class="btn" title="Print / Save PDF" aria-label="Print">Print</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav container" aria-label="Sections">
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Project</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <main id="main" class="container">
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <article class="item">
+        <div class="item-main">
+          <h3>Michigan State University <span class="muted">— East Lansing, MI</span></h3>
+          <p class="role">Bachelor of Engineering in Computer Science</p>
+        </div>
+        <div class="meta">
+          <time class="date-range">Dec 2026</time>
+        </div>
+        <ul class="bullets">
+          <li>Courses: Data Structures &amp; Algorithms, Object-Oriented Software Design, Computer Organization &amp; Architecture, Discrete Structures, Matrix Algebra</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+
+      <article class="item">
+        <div class="item-main">
+          <h3>Harman International — A Samsung Company <span class="muted">— Novi, MI</span></h3>
+          <p class="role">Sound Quality Benchmarking Intern • C++, Python, SQL, PowerPoint</p>
+        </div>
+        <div class="meta">
+          <time class="date-range">May 2025 – Aug 2025</time>
+        </div>
+        <ul class="bullets">
+          <li>Reduced acoustic testing time by <strong>50%</strong> by building a Python GUI to automate SoundCheck sequence control via TCP/IP.</li>
+          <li>Created C++ SQC files with embedded SQL to generate pink noise on targeted car audio channels and capture Frequency Response Function data.</li>
+          <li>Produced presentations synthesizing listener opinions, FRF graphs, and Loudness graphs for automotive and speaker manufacturers.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-main">
+          <h3>Camaco-Amvian <span class="muted">— Farmington Hills, MI</span></h3>
+          <p class="role">Information Technology Intern • Active Directory, Hyper-V, Linux, Microsoft 365</p>
+        </div>
+        <div class="meta">
+          <time class="date-range">May 2024 – Aug 2024</time>
+        </div>
+        <ul class="bullets">
+          <li>Set up laptops, monitors, and TVs to support seamless hardware integration across teams.</li>
+          <li>Managed and created user accounts using Microsoft 365 for improved collaboration.</li>
+          <li>Deployed a virtualization environment (Hyper-V), documented VM management, and compared virtualization vs. traditional computing.</li>
+          <li>Migrated data to the Plex Fixed Asset module in a test environment and demoed the process to stakeholders.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Project (SpartanMind only) -->
+    <section id="projects" class="card">
+      <h2>Project</h2>
+      <article class="item">
+        <div class="item-main">
+          <h3>SpartanMind Game <span class="muted">— C++, GitLab, wxWidgets, XML</span></h3>
+          <p class="role">Academic Project</p>
+        </div>
+        <div class="meta">
+          <time class="date-range">Mar 2025 – Apr 2025</time>
+        </div>
+        <ul class="bullets">
+          <li>Built a multi-level game with wxWidgets and XML-based level loading.</li>
+          <li>Implemented tile mechanics, interactive items, randomized drops, and real-time score feedback.</li>
+          <li>Designed Level 3 and authored 20+ unit tests to ensure stability and functionality.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>Python</li><li>C/C++</li><li>Java</li><li>SQL</li><li>ARM Assembly</li><li>MATLAB</li><li>XML</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Frameworks / Platforms</h3>
+          <ul class="tags">
+            <li>Node.js</li><li>.NET Core</li><li>Linux</li><li>Anaconda</li><li>Jupyter Notebook</li><li>Broker APIs</li><li>OpenAI</li><li>Excel</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Developer Tools</h3>
+          <ul class="tags">
+            <li>Git</li><li>Docker</li><li>VS Code</li><li>PyCharm</li><li>CLion</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Libraries</h3>
+          <ul class="tags">
+            <li>NumPy</li><li>TensorFlow</li><li>PyTorch</li><li>pandas</li><li>wxWidgets</li><li>tkinter</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aayush Jagtap • <span class="mono">Built with HTML + CSS + JavaScript</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
