@@ -1,31 +1,6 @@
 // Theme toggle + print + year
 (function(){
   const root = document.documentElement;
-  const btn = document.getElementById('themeToggle');
-  const printBtn = document.getElementById('printBtn');
-  const year = document.getElementById('year');
-
-  // Persisted theme
-  const stored = localStorage.getItem('theme');
-  if (stored) root.dataset.theme = stored;
-
-  function setTheme(next){
-    if (!next){
-      delete root.dataset.theme;
-      localStorage.removeItem('theme');
-      return;
-    }
-    root.dataset.theme = next;
-    localStorage.setItem('theme', next);
-  }
-
-  btn.addEventListener('click', () => {
-    const current = root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    setTheme(current === 'dark' ? 'light' : 'dark');
-  });
-
-  // Print (save to PDF)
-  printBtn.addEventListener('click', () => window.print());
 
   // Footer year
   year.textContent = new Date().getFullYear();
