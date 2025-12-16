@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
   sections.forEach(sec => {
     if (sec.id !== 'summary') {
       sec.classList.add('hidden');
+      sec.style.visibility = 'hidden';
     }
   });
 
@@ -20,9 +21,13 @@ document.addEventListener('DOMContentLoaded', function(){
       const href = a.getAttribute('href');
       const id = href.substring(1);
       const sections = document.querySelectorAll('main section.card');
-      sections.forEach(sec => sec.classList.add('hidden'));
+      sections.forEach(sec => {
+        sec.classList.add('hidden');
+        setTimeout(() => sec.style.visibility = 'hidden', 500);
+      });
       const target = document.getElementById(id);
       if (target) {
+        target.style.visibility = 'visible';
         target.classList.remove('hidden');
         window.scrollTo({top: 0, behavior: 'smooth'});
       }

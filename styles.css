@@ -11,6 +11,17 @@
   --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-color-scheme: light){
   :root{
     --bg:#f7f9fc; --panel:#ffffff; --text:#0b0d11; --text-muted:#5b6472;
@@ -52,8 +63,14 @@ body{
   padding:.4rem .7rem; border-radius:999px;
   background:var(--chip); color:var(--text);
   border:1px solid var(--border); text-decoration:none; font-weight:600;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-.chip:hover{ border-color:var(--accent); color:var(--accent); }
+.chip:hover{ 
+  border-color:var(--accent); 
+  color:var(--accent); 
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 /* Accessibility */
 .skip-link{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
@@ -77,6 +94,7 @@ body{
   font-size: clamp(1.8rem, 3.5vw, 2.25rem);
   font-weight: 800;
   letter-spacing: .3px;
+  animation: fadeInUp 1s ease-out;
 }
 .id-block .title{ margin:.2rem 0 0; color: var(--text-muted); font-weight:600; }
 
@@ -98,8 +116,13 @@ body{
 .nav a{
   text-decoration:none; color:var(--text-muted);
   border-bottom:2px solid transparent; padding-bottom:4px; font-weight:700;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
-.nav a:hover{ color:var(--accent); border-color: var(--accent); }
+.nav a:hover{ 
+  color:var(--accent); 
+  border-color: var(--accent); 
+  transform: translateY(-2px);
+}
 
 /* Cards / Items */
 .card{
@@ -109,6 +132,7 @@ body{
   padding: 22px;
   margin: 14px 0 18px;
   box-shadow: var(--shadow);
+  animation: fadeInUp 0.8s ease-out 0.5s both;
 }
 .card h2{
   margin: 0 0 12px;
@@ -153,7 +177,11 @@ body{
 /* Footer */
 .site-footer{ padding: 38px 0 60px; color: var(--text-muted); }
 
-.hidden { display: none; }
+.hidden { 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
 
 /* Print Styles (nice PDF output) */
 @media print{
