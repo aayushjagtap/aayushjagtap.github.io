@@ -24,11 +24,21 @@ document.addEventListener('DOMContentLoaded', function(){
       const sections = document.querySelectorAll('main section.card');
       sections.forEach(sec => {
         if (sec === target) {
+          if (sec.dataset.hideTimeout) {
+            clearTimeout(sec.dataset.hideTimeout);
+            delete sec.dataset.hideTimeout;
+          }
           sec.style.visibility = 'visible';
           sec.classList.remove('hidden');
         } else {
           sec.classList.add('hidden');
-          setTimeout(() => sec.style.visibility = 'hidden', 500);
+          if (sec.dataset.hideTimeout) {
+            clearTimeout(sec.dataset.hideTimeout);
+          }
+          sec.dataset.hideTimeout = setTimeout(() => {
+            sec.style.visibility = 'hidden';
+            delete sec.dataset.hideTimeout;
+          }, 500);
         }
       });
       if (target) {
