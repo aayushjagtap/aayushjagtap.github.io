@@ -5,16 +5,20 @@
   // Footer year
   year.textContent = new Date().getFullYear();
 
-  // Optional: smooth scroll for in-page nav
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  // Section toggle for nav
+  document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
     a.addEventListener('click', e=>{
-      const id = a.getAttribute('href');
-      if (!id || id === '#') return;
-      const el = document.querySelector(id);
-      if (!el) return;
       e.preventDefault();
-      el.scrollIntoView({behavior:'smooth', block:'start'});
-      history.pushState({}, '', id);
+      const href = a.getAttribute('href');
+      const id = href.substring(1);
+      const sections = document.querySelectorAll('main section.card');
+      sections.forEach(sec => sec.classList.add('hidden'));
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.remove('hidden');
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }
+      history.pushState({}, '', href);
     });
   });
 })();
