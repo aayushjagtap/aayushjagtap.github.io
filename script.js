@@ -1,5 +1,5 @@
 // Theme toggle + print + year
-(function(){
+document.addEventListener('DOMContentLoaded', function(){
   const root = document.documentElement;
 
   // Footer year
@@ -29,4 +29,4 @@
       history.pushState({}, '', href);
     });
   });
-})();
+});
