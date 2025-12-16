@@ -20,15 +20,18 @@ document.addEventListener('DOMContentLoaded', function(){
       e.preventDefault();
       const href = a.getAttribute('href');
       const id = href.substring(1);
+      const target = document.getElementById(id);
       const sections = document.querySelectorAll('main section.card');
       sections.forEach(sec => {
-        sec.classList.add('hidden');
-        setTimeout(() => sec.style.visibility = 'hidden', 500);
+        if (sec === target) {
+          sec.style.visibility = 'visible';
+          sec.classList.remove('hidden');
+        } else {
+          sec.classList.add('hidden');
+          setTimeout(() => sec.style.visibility = 'hidden', 500);
+        }
       });
-      const target = document.getElementById(id);
       if (target) {
-        target.style.visibility = 'visible';
-        target.classList.remove('hidden');
         window.scrollTo({top: 0, behavior: 'smooth'});
       }
       history.pushState({}, '', href);
