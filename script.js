@@ -5,6 +5,14 @@
   // Footer year
   year.textContent = new Date().getFullYear();
 
+  // Initially hide all sections except summary
+  const sections = document.querySelectorAll('main section.card');
+  sections.forEach(sec => {
+    if (sec.id !== 'summary') {
+      sec.classList.add('hidden');
+    }
+  });
+
   // Section toggle for nav
   document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
     a.addEventListener('click', e=>{
