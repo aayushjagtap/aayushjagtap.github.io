@@ -29,16 +29,19 @@ document.addEventListener('DOMContentLoaded', function(){
             delete sec.dataset.hideTimeout;
           }
           sec.style.visibility = 'visible';
+          sec.style.transition = '';
           sec.classList.remove('hidden');
         } else {
           sec.classList.add('hidden');
+          sec.style.transition = 'none';
+          sec.style.visibility = 'hidden';
           if (sec.dataset.hideTimeout) {
             clearTimeout(sec.dataset.hideTimeout);
           }
           sec.dataset.hideTimeout = setTimeout(() => {
-            sec.style.visibility = 'hidden';
+            sec.style.transition = '';
             delete sec.dataset.hideTimeout;
-          }, 500);
+          }, 10); // restore transition after a tick
         }
       });
       if (target) {
