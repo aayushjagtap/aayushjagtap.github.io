@@ -43,6 +43,7 @@ body{
 
 /* Utilities */
 .container{ max-width: 980px; margin: 0 auto; padding: 0 20px; }
+main { position: relative; min-height: 60vh; }
 .muted{ color: var(--text-muted); font-weight: 500; }
 .mono{ font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .btn{
@@ -133,6 +134,10 @@ body{
   margin: 14px 0 18px;
   box-shadow: var(--shadow);
   animation: fadeInUp 0.8s ease-out 0.5s both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .card h2{
   margin: 0 0 12px;
