@@ -7,7 +7,7 @@
   --brand:#6ee7b7;
   --chip:#1b2130;
   --border:#242a38;
-  --accent:#8ab4f8;
+  --accent:#ff4081;
   --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
@@ -37,6 +37,7 @@ body{
   color:var(--text);
   background: radial-gradient(1200px 600px at 20% -10%, rgba(110,231,183,.25), transparent 40%),
               radial-gradient(800px 500px at 100% 0%, rgba(138,180,248,.16), transparent 40%),
+              radial-gradient(600px 400px at 80% 100%, rgba(255,64,129,.2), transparent 40%),
               var(--bg);
   line-height:1.6;
 }
@@ -70,7 +71,7 @@ main { position: relative; min-height: 60vh; }
   border-color:var(--accent); 
   color:var(--accent); 
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15), 0 0 10px rgba(255,64,129,0.5);
 }
 
 /* Accessibility */
@@ -96,6 +97,10 @@ main { position: relative; min-height: 60vh; }
   font-weight: 800;
   letter-spacing: .3px;
   animation: fadeInUp 1s ease-out;
+  background: linear-gradient(45deg, #6ee7b7, #8ab4f8, #ff4081);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .id-block .title{ margin:.2rem 0 0; color: var(--text-muted); font-weight:600; }
 
@@ -123,6 +128,7 @@ main { position: relative; min-height: 60vh; }
   color:var(--accent); 
   border-color: var(--accent); 
   transform: translateY(-2px);
+  text-shadow: 0 0 10px rgba(255,64,129,0.5);
 }
 
 /* Cards / Items */
@@ -132,7 +138,7 @@ main { position: relative; min-height: 60vh; }
   border-radius: 14px;
   padding: 22px;
   margin: 14px 0 18px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow), 0 0 20px rgba(110,231,183,0.3);
   animation: fadeInUp 0.8s ease-out 0.5s both;
   position: absolute;
   top: 0;
