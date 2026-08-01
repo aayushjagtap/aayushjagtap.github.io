@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Branches — Aayush Jagtap</title>
+  <meta name="description" content="Branches — a full-stack Trello-style Kanban board built with React, TypeScript, FastAPI, and deployed on AWS." />
+  <meta name="theme-color" content="#0a0e17" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e17'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='26' fill='%235eead4' text-anchor='middle'%3EAJ%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg-decor" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html#hero" class="brand">AJ</a>
+
+      <nav class="nav" aria-label="Sections">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+      </nav>
+
+      <div class="contact">
+        <a href="tel:+12487870379" class="chip" aria-label="Phone" title="Call">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a href="mailto:apj1905@gmail.com" class="chip" aria-label="Email" title="Email">
+          <img src="../gmail.png" alt="" width="16" height="16" />
+        </a>
+        <a href="https://www.linkedin.com/in/aayush-jagtap" class="chip" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.1 107.3 0 83.2 0 53.6 0 24 24.1 0 53.6 0c29.5 0 53.6 24 53.6 53.6 0 29.6-24.1 53.7-53.6 53.7zM447.9 448h-92.4V304.1c0-34.2-.7-78.2-47.6-78.2-47.7 0-55 37.3-55 75.8V448H160V148.9h88.7v40.8h1.3c12.4-23.6 42.6-48.4 87.6-48.4 93.7 0 111.1 61.7 111.1 141.9V448z"/></svg>
+        </a>
+        <a href="https://github.com/aayushjagtap" class="chip" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <img src="../github.png" alt="" width="16" height="16" />
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <section class="detail-hero reveal-section">
+        <a href="../index.html#projects" class="back-link">← Back to all projects</a>
+        <p class="detail-kicker">Personal Project</p>
+        <h1 class="detail-title"><span class="emoji" aria-hidden="true">🗂️</span>Branches</h1>
+        <p class="detail-sub">
+          A full-stack, Trello-style Kanban board with JWT authentication and persisted
+          drag-and-drop ordering — built end-to-end from a React frontend to a
+          containerized FastAPI backend deployed on AWS.
+        </p>
+        <div class="detail-meta-row">
+          <span>📅 August 2026</span>
+          <span>🧱 React · TypeScript · FastAPI · PostgreSQL · Docker · AWS</span>
+        </div>
+        <div class="detail-actions">
+          <a class="btn btn-primary" href="https://github.com/aayushjagtap/branches" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.99 3.24 9.22 7.73 10.72.56.1.77-.24.77-.54v-2.12c-3.15.68-3.81-1.36-3.81-1.36-.51-1.3-1.25-1.65-1.25-1.65-1.03-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1.01 1.73 2.65 1.23 3.29.94.1-.73.4-1.23.72-1.51-2.52-.29-5.16-1.26-5.16-5.6 0-1.24.44-2.24 1.16-3.03-.12-.29-.5-1.46.11-3.04 0 0 .95-.3 3.13 1.16a10.9 10.9 0 0 1 5.7 0c2.17-1.46 3.12-1.16 3.12-1.16.62 1.58.23 2.75.11 3.04.72.79 1.16 1.79 1.16 3.03 0 4.35-2.65 5.31-5.17 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.78.54A11.02 11.02 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+            View on GitHub
+          </a>
+          <a class="btn btn-ghost" href="../index.html#projects">All Projects</a>
+        </div>
+      </section>
+
+      <section class="detail-section reveal-section">
+        <h2>Overview</h2>
+        <div class="card">
+          <p>
+            Branches is a lightweight, Trello/Jira-style Kanban board built to demonstrate
+            end-to-end full-stack engineering: a boards → columns → cards data model,
+            per-user authentication, and a real cloud deployment rather than a
+            localhost-only demo.
+          </p>
+          <p>
+            Users can create multiple boards, organize work into customizable columns,
+            and reorder cards via drag-and-drop, with every move persisted immediately
+            to the backend so state survives refreshes and devices.
+          </p>
+        </div>
+      </section>
+
+      <section class="detail-section reveal-section">
+        <h2>Architecture</h2>
+        <div class="card">
+          <p><strong>Frontend</strong> — React + TypeScript, bundled with Vite. Drag-and-drop
+            uses <code>dnd-kit</code> for accessible, dependency-light reordering instead of
+            the native HTML5 drag API.</p>
+          <p><strong>Backend</strong> — FastAPI served by Uvicorn, with SQLAlchemy as the ORM
+            and Pydantic for request/response validation. Auto-generated Swagger docs expose
+            the full REST API.</p>
+          <p><strong>Auth</strong> — JWT access tokens over the OAuth2 password flow, protecting
+            every board/column/card route behind the authenticated user.</p>
+          <p><strong>Deployment</strong> — the React build is served via CloudFront/S3; the
+            FastAPI backend runs containerized on EC2 behind Caddy, which handles automatic
+            TLS certificate issuance and renewal. Persistence was migrated from local SQLite
+            to RDS Postgres, with Alembic managing schema migrations and environment-based
+            configuration replacing every hardcoded credential.</p>
+        </div>
+      </section>
+
+      <section class="detail-section reveal-section">
+        <h2>Key Features</h2>
+        <div class="card">
+          <ul class="bullets">
+            <li>Multi-board support with per-user isolation via JWT-protected routes</li>
+            <li>Drag-and-drop cards and columns with backend-persisted ordering</li>
+            <li>Inline card creation and renaming without modal dialogs</li>
+            <li>Containerized backend deployment with automatic TLS via Caddy</li>
+            <li>Zero-downtime migration path from SQLite to managed Postgres</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="detail-section reveal-section">
+        <h2>Tech Stack</h2>
+        <div class="card">
+          <ul class="tags icon-tags">
+            <li data-icon="react">React</li>
+            <li data-icon="typescript">TypeScript</li>
+            <li data-icon="vite">Vite</li>
+            <li data-icon="fastapi">FastAPI</li>
+            <li data-icon="python">Python</li>
+            <li data-icon="postgresql">PostgreSQL</li>
+            <li data-icon="sqlalchemy">SQLAlchemy</li>
+            <li data-icon="docker">Docker</li>
+            <li data-icon="amazonaws">AWS</li>
+            <li data-icon="caddy">Caddy</li>
+            <li data-icon="jsonwebtokens">JWT</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="detail-section reveal-section">
+        <h2>What I Learned</h2>
+        <div class="card">
+          <p>
+            Shipping a real AWS deployment surfaced problems a local demo never would —
+            environment-based configuration, credential management, and migrating a schema
+            from SQLite to Postgres without losing data. Wiring Caddy for automatic TLS in
+            front of a containerized API was a good forcing function for treating the
+            backend like a production service instead of a script that happens to run.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Aayush Jagtap</p>
+      <div class="footer-links">
+        <a href="tel:+12487870379">248-787-0379</a>
+        <span class="dot">•</span>
+        <a href="mailto:apj1905@gmail.com">apj1905@gmail.com</a>
+        <span class="dot">•</span>
+        <a href="https://www.linkedin.com/in/aayush-jagtap" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="https://github.com/aayushjagtap" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <a href="#main" class="back-to-top" aria-label="Back to top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="../script.js?v=2"></script>
+</body>
+</html>

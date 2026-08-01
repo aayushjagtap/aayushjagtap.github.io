@@ -198,6 +198,7 @@ body{
   font-family: "Source Code Pro", monospace; color: var(--accent); font-weight: 700; font-size: .95rem;
 }
 .section h2{ margin:0; font-size: clamp(1.5rem, 3vw, 1.9rem); font-weight: 800; letter-spacing: -.3px; }
+.h2-emoji{ margin-right: .15em; }
 
 .card{
   background: var(--panel);
@@ -233,6 +234,15 @@ body.js .reveal-section.in{ opacity: 1; transform: none; }
 .tl-card-head{ display:flex; flex-wrap:wrap; justify-content:space-between; gap: 10px 20px; margin-bottom: 12px; }
 .tl-card h3{ margin:0; font-size: 1.12rem; font-weight: 800; }
 .org{ margin:.2rem 0 0; color: var(--text-muted); font-weight: 700; font-size: .92rem; }
+
+/* Org / school logos */
+.org-row{ display:flex; align-items:flex-start; gap: 12px; }
+.org-logo{
+  flex-shrink: 0; width: 34px; height: 34px; border-radius: 9px;
+  background: var(--panel-2) center / 20px 20px no-repeat;
+  border: 1px solid var(--border);
+}
+.org-logo-lg{ width: 42px; height: 42px; background-size: 24px 24px; border-radius: 11px; }
 .meta{ text-align: right; }
 .date-range{ font-variant-numeric: tabular-nums; color: var(--text-muted); font-weight: 700; font-size: .88rem; white-space: nowrap; }
 .badge{
@@ -261,9 +271,14 @@ body.js .reveal-section.in{ opacity: 1; transform: none; }
 .project-card:hover{ transform: translateY(-4px); border-color: color-mix(in oklab, var(--accent) 45%, var(--border)); }
 .project-head{ display:flex; justify-content:space-between; align-items:baseline; gap: 10px; }
 .project-head h3{ margin:0; font-size: 1.08rem; font-weight: 800; }
+.project-head h3 a{ color: var(--text); text-decoration: none; }
+.project-head h3 a:hover{ color: var(--accent); }
 .project-sub{ margin: .35rem 0 0; color: var(--text-muted); font-weight: 600; font-size: .88rem; }
 .project-card .bullets{ flex: 1; }
 .project-card .tags-tech{ margin-top: 14px; }
+.project-links{ display:flex; gap: 1rem; margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--border); }
+.project-link{ font-size: .85rem; font-weight: 700; color: var(--text-muted); text-decoration:none; transition: color .2s ease; }
+.project-link:hover{ color: var(--accent); }
 
 /* ============ Skills ============ */
 .skills-grid{ display:grid; gap: 26px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
@@ -291,6 +306,36 @@ body.js .reveal-section.in{ opacity: 1; transform: none; }
 .footer-links a:hover{ color: var(--accent); }
 .back-to-top{ color: var(--text-muted); text-decoration:none; font-weight: 700; font-size: .85rem; margin-top: .4rem; transition: color .2s ease; }
 .back-to-top:hover{ color: var(--accent); }
+
+/* ============ Project detail pages ============ */
+.back-link{
+  display:inline-flex; align-items:center; gap:.4rem;
+  color: var(--text-muted); text-decoration:none; font-weight:700; font-size:.9rem;
+  transition: color .2s ease;
+}
+.back-link:hover{ color: var(--accent); }
+
+.detail-hero{ padding: 56px 0 36px; }
+.detail-kicker{ margin: 0 0 .6rem; color: var(--accent); font-weight:700; letter-spacing:1.5px; text-transform:uppercase; font-size:.78rem; }
+.detail-title{ margin:0; font-size: clamp(2rem, 5vw, 3rem); font-weight:900; letter-spacing:-1px; }
+.detail-title .emoji{ margin-right:.25em; }
+.detail-sub{ margin: .8rem 0 0; color: var(--text-muted); font-size: 1.05rem; max-width: 640px; }
+.detail-meta-row{ display:flex; flex-wrap:wrap; gap: .6rem 1.4rem; margin-top: 1.4rem; color: var(--text-muted); font-weight:600; font-size:.9rem; }
+.detail-actions{ display:flex; gap:.8rem; flex-wrap:wrap; margin-top: 1.6rem; }
+
+.detail-section{ padding: 20px 0; }
+.detail-section h2{ font-size: 1.25rem; font-weight:800; margin: 0 0 14px; }
+.detail-section .card{ margin: 0; }
+.detail-section .card p{ color: var(--text-muted); margin: 0 0 1rem; }
+.detail-section .card p:last-child{ margin-bottom: 0; }
+.detail-section .card ul{ color: var(--text-muted); }
+
+.collab-note{
+  display:flex; align-items:flex-start; gap: .6rem;
+  background: var(--panel-2); border: 1px solid var(--border); border-left: 3px solid var(--accent-2);
+  border-radius: var(--radius-sm); padding: 14px 16px; font-size: .92rem; color: var(--text-muted);
+  margin-top: 16px;
+}
 
 /* ============ Print ============ */
 @media print{

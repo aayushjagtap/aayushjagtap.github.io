@@ -76,6 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // Populate company/university logos via Google's favicon service
+  document.querySelectorAll('[data-logo-domain]').forEach(function (el) {
+    var domain = el.getAttribute('data-logo-domain');
+    el.style.backgroundImage = "url('https://www.google.com/s2/favicons?sz=64&domain=" + domain + "')";
+  });
+
   // Populate skill icons via Simple Icons CDN, with graceful fallback to text-only pill
   document.querySelectorAll('.icon-tags li[data-icon]').forEach(function (li) {
     var slug = li.getAttribute('data-icon');
