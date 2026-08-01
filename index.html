@@ -3,202 +3,379 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aayush Jagtap</title>
-  <meta name="description" content="Resume of Aayush Jagtap — Computer Science student at Michigan State University." />
+  <title>Aayush Jagtap — Software Engineer</title>
+  <meta name="description" content="Aayush Jagtap — Computer Science student at Michigan State University and Software Engineering Intern at Rocket Mortgage." />
+  <meta name="theme-color" content="#0a0e17" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Ctext y='50' x='6' font-size='48'%3E%A9%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e17'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='26' fill='%235eead4' text-anchor='middle'%3EAJ%3C/text%3E%3C/svg%3E">
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <div class="bg-decor" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <div class="id-block">
-        <h1 class="name">Aayush Jagtap</h1>
-        <p class="title">Off The Meter Productions</p>
-      </div>
+      <a href="#hero" class="brand">AJ</a>
+
+      <nav class="nav" aria-label="Sections">
+        <a href="#about" data-nav>About</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#education" data-nav>Education</a>
+      </nav>
 
       <div class="contact">
-        <a href="tel:+12487870379" class="chip" aria-label="Phone">📞</a>
-
-        <a href="mailto:apj1905@gmail.com" class="chip" aria-label="Email">
-          <img src="gmail.png" alt="Gmail" width="18" height="18" style="display:block;" />
+        <a href="tel:+12487870379" class="chip" aria-label="Phone" title="Call">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </a>
-
-        <a href="https://www.linkedin.com/in/aayush-jagtap" class="chip" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512" fill="currentColor" style="vertical-align:middle">
-            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.1 107.3 0 83.2 0 53.6 0 24 24.1 0 53.6 0c29.5 0 53.6 24 53.6 53.6 0 29.6-24.1 53.7-53.6 53.7zM447.9 448h-92.4V304.1c0-34.2-.7-78.2-47.6-78.2-47.7 0-55 37.3-55 75.8V448H160V148.9h88.7v40.8h1.3c12.4-23.6 42.6-48.4 87.6-48.4 93.7 0 111.1 61.7 111.1 141.9V448z"/>
-          </svg>
+        <a href="mailto:apj1905@gmail.com" class="chip" aria-label="Email" title="Email">
+          <img src="gmail.png" alt="" width="16" height="16" />
         </a>
-
-        <a href="https://github.com/aayushjagtap" class="chip" target="_blank" rel="noopener" aria-label="GitHub">
-          <img src="github.png" alt="GitHub" width="18" height="18" style="display:block;" />
+        <a href="https://www.linkedin.com/in/aayush-jagtap" class="chip" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.1 107.3 0 83.2 0 53.6 0 24 24.1 0 53.6 0c29.5 0 53.6 24 53.6 53.6 0 29.6-24.1 53.7-53.6 53.7zM447.9 448h-92.4V304.1c0-34.2-.7-78.2-47.6-78.2-47.7 0-55 37.3-55 75.8V448H160V148.9h88.7v40.8h1.3c12.4-23.6 42.6-48.4 87.6-48.4 93.7 0 111.1 61.7 111.1 141.9V448z"/></svg>
+        </a>
+        <a href="https://github.com/aayushjagtap" class="chip" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <img src="github.png" alt="" width="16" height="16" />
         </a>
       </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <nav class="nav container" aria-label="Sections">
-    <a href="#summary">Summary</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Project</a>
-    <a href="#skills">Skills</a>
-  </nav>
+  <main id="main">
 
-  <main id="main" class="container">
-    <!-- Summary -->
-    <section id="summary" class="card">
-      <h2>Professional Summary</h2>
-      <p>I’m a Computer Science engineering student with a strong interest in software engineering and systems development. I enjoy building efficient, reliable software in C++ and Python, and I’ve gained real-world experience through industry internships and hands-on projects spanning backend systems, automation, and AI-driven applications. I’m currently seeking software engineering internships where I can contribute meaningfully while continuing to grow as an engineer.</p>
-    </section>
-    <!-- Education -->
-    <section id="education" class="card">
-      <h2>Education</h2>
-      <article class="item">
-        <div class="item-main">
-          <h3>Michigan State University <span class="muted">— East Lansing, MI</span></h3>
-          <p class="role">Bachelor of Engineering in Computer Science</p>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Hi, I'm</p>
+        <h1 class="name reveal">Aayush Jagtap</h1>
+        <p class="tagline reveal">CS Student @ Michigan State University</p>
+        <p class="hero-sub reveal">
+          Building reliable, efficient software — from Angular workflow editors to real-time
+          computer vision systems — with hands-on experience across full-stack, embedded,
+          and AI/ML engineering.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="Aayush_Jagtap_Resume.pdf" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Résumé
+          </a>
+          <a class="btn btn-ghost" href="#experience">
+            View Experience
+          </a>
         </div>
-        <div class="meta">
-          <time class="date-range">Aug 2023 – Dec 2026</time>
-        </div>
-        <ul class="bullets">
-          <li>Courses: Data Structures and Algorithms, Object-Oriented Software Design, Computer Organization and Architecture, Discrete Structures, Matrix Algebra, Computer Systems, Software Engineering, Introduction to Artificial Intelligence</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="card">
-      <h2>Experience</h2>
-      <article class="item">
-        <div class="item-main">
-          <h3>Handshake <span class="muted">— Remote</span></h3>
-          <p class="role">A.I. Fellow • Python, AI/ML Evaluation, Data Quality, Multimodal Systems</p>
-        </div>
-        <div class="meta">
-          <time class="date-range">November 2025 – Present</time>
-        </div>
-        <ul class="bullets">
-          <li>Improve large-scale AI model performance by completing high-accuracy evaluations on text, image, and audio outputs, providing training signal used in model fine-tuning and iterative retraining</li>
-          <li>Identify model failure modes and edge cases, delivering structured feedback that informs updates to processing pipelines, alignment logic, and evaluation tooling</li>
-          <li>Generate reliable labeled datasets by performing detailed annotation and statistical quality checks to maintain consistency, accuracy, and data integrity across task types</li>
-          <li>Adapt quickly to evolving ML task frameworks and guidelines, contributing to multiple concurrent AI development streams based on performance and technical fit</li>
-        </ul>
-      </article>
-      <article class="item">
-        <div class="item-main">
-          <h3>Harman International <span class="muted">— Novi, MI</span></h3>
-          <p class="role">Software Engineering Intern • C++, Python, SQL, PowerPoint</p>
-        </div>
-        <div class="meta">
-          <time class="date-range">May 2025 – Aug 2025</time>
-        </div>
-        <ul class="bullets">
-          <li>Reduced acoustic testing time by <strong>50%</strong> by leading development of a Python GUI automating SoundCheck sequence control via TCP/IP, streamlining workflow efficiency, and simplyifying user interaction with Listen Inc. software.</li>
-          <li>Directed creation of C++ SQC files with embedded SQL, enabling precise audio performance by generating pink noise across targeted car audio channels and capturing Frequency Response Function Data.</li>
-          <li>Generated presentations using data collected from listeners' opinionated data, Frequency Response Function graphs, and Loudness graphs to send out to a variety of car and speaker brands to assist in improving speaker quality in cars.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-main">
-          <h3>Camaco-Amvian <span class="muted">— Farmington Hills, MI</span></h3>
-          <p class="role">Information Technology Intern • Active Directory, Hyper-V, Linux, Microsoft 365</p>
-        </div>
-        <div class="meta">
-          <time class="date-range">May 2024 – Aug 2024</time>
-        </div>
-        <ul class="bullets">
-          <li>Set up laptops, monitors, and TVs to support seamless hardware integration across teams.</li>
-          <li>Managed and created user accounts using Microsoft 365 for improved collaboration.</li>
-          <li>Led virtualization enironment setup and VM management leveraging Hyper-V, and authored report outlining benefits of virtualization vs. traditional computing.</li>
-          <li>Researched and migrated data to the Plex Fixed Asset module in a test environment and demonstrated process to stakeholders for future production rollout.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Project -->
-    <section id="projects" class="card">
-      <h2>Project</h2>
-      <article class="item">
-        <div class="item-main">
-          <h3>DriveAware Detection System <span class="muted">— Python, C, OpenCV, MediaPipe, DeepFace</span></h3>
-          <p class="role">Personal Project</p>
-        </div>
-        <div class="meta">
-          <time class="date-range">October 2025</time>
-        </div>
-        <ul class="bullets">
-          <li>Developed a real-time driver monitoring system detecting drowsiness and emotional instability using computer vision</li>
-          <li>Integrated ESP32-CAM with Python server via UDP for synchronized LED and alarm alerts</li>
-          <li>Implemented facial and eye-tracking with MediaPipe and emotion analysis with DeepFace</li>
-          <li>Optimized multithreaded processing for low-latency detection and hardware response</li>
-        </ul>
-      </article>
-      <article class="item">
-        <div class="item-main">
-          <h3>SpartanMind Game <span class="muted">— C++, GitLab, wxWidgets, XML</span></h3>
-          <p class="role">Academic Project</p>
-        </div>
-        <div class="meta">
-          <time class="date-range">Mar 2025 – Apr 2025</time>
-        </div>
-        <ul class="bullets">
-          <li>Built a multi-level Mastermind-style game using OOP principles and MVC structure</li>
-          <li>Developed XML-based level loading supporting reusable assets, dynamic item placement, and scalable game logic</li>
-          <li>Implemented tile mechanics, interactive objects, and feedback using event-driven design</li>
-          <li>Authored 20+ unit tests validating class behavior and ensuring stable gameplay across multiple levels</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-block">
-          <h3>Languages</h3>
-          <ul class="tags">
-            <li>Python</li><li>C/C++</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>ARM Assembly</li><li>MATLAB</li><li>HTML/CSS</li><li>XML</li>
-          </ul>
-        </div>
-        <div class="skill-block">
-          <h3>Frameworks</h3>
-          <ul class="tags">
-            <li>.NET Core</li><li>Node.js</li><li>Linux</li><li>TensorFlow</li><li>PyTorch</li><li>MediaPipe</li><li>DeepFace</li><li>wxWidgets</li>
-          </ul>
-        </div>
-        <div class="skill-block">
-          <h3>Developer Tools</h3>
-          <ul class="tags">
-            <li>Git</li><li>Docker</li><li>GitLab</li><li>VSCode</li><li>PyCharm</li><li>CLion</li><li>Jupyter Notebook</li><li>Anaconda</li>
-          </ul>
-        </div>
-        <div class="skill-block">
-          <h3>Libraries</h3>
-          <ul class="tags">
-            <li>NumPy</li><li>pandas</li><li>OpenCV</li><li>tkinter</li><li>matplotlib</li><li>scikit-learn</li><li>pygame</li><li>cvzone</li>
-          </ul>
-        </div>
-        <div class="skill-block">
-          <h3>Technologies & APIs</h3>
-          <ul class="tags">
-            <li>OpenAI API</li><li>ESP32-CAM</li><li>Broker APIs</li><li>Hyper-V</li><li>Microsoft 365</li>
-          </ul>
+        <div class="hero-meta reveal">
+          <span>📍 Detroit, MI</span>
+          <span class="dot">•</span>
+          <span>Software Engineering Intern @ Rocket Mortgage</span>
         </div>
       </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
     </section>
+
+    <div class="container">
+      <!-- About -->
+      <section id="about" class="section reveal-section">
+        <div class="section-head">
+          <span class="section-index">01</span>
+          <h2>About</h2>
+        </div>
+        <div class="card about-card">
+          <p>
+            I'm a Computer Science engineering student at Michigan State University with a strong
+            interest in software engineering and systems development. I enjoy building efficient,
+            reliable software across the stack — currently developing UX features and schema-driven
+            form tooling for Rocket Logic's loan origination platform at <strong>Rocket Mortgage</strong>.
+          </p>
+          <p>
+            My background spans full-stack web development, embedded/computer-vision systems, and
+            AI/ML evaluation, gained through internships at Rocket Mortgage, Handshake, Harman
+            International, and Camaco-Amvian, plus independent projects in React/FastAPI, real-time
+            driver monitoring, and game engineering. I'm always looking to grow as an engineer and
+            take on new technical challenges.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section reveal-section">
+        <div class="section-head">
+          <span class="section-index">02</span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+
+          <article class="tl-item">
+            <div class="tl-dot current" aria-hidden="true"></div>
+            <div class="card tl-card">
+              <div class="tl-card-head">
+                <div>
+                  <h3>Software Engineering Intern</h3>
+                  <p class="org">Rocket Mortgage <span class="muted">— Detroit, MI</span></p>
+                </div>
+                <div class="meta">
+                  <span class="badge badge-current">Current</span>
+                  <time class="date-range">May 2026 – Present</time>
+                </div>
+              </div>
+              <ul class="tags tags-tech">
+                <li>Angular</li><li>TypeScript</li><li>C#</li><li>.NET</li><li>Jasmine</li>
+              </ul>
+              <ul class="bullets">
+                <li>Developed core UX features for an Angular 17 visual workflow editor in Rocket Logic's loan origination platform, including fullscreen controls, a 7-shortcut keybind system, and a redesigned toolbar</li>
+                <li>Resolved a data-corruption bug causing silent data loss across six workflow step types by tracing a nested JSON double-serialization failure, catching a second regression missed by 648 CI checks</li>
+                <li>Engineered schema-sourced form defaults via a custom <code>[SchemaDefault]</code> C# reflection attribute consumed by Angular dynamic forms, helping enable 100% of task workflows to be built without raw-JSON expert mode</li>
+                <li>Implemented a schema-driven form control override rendering an embedded JSON editor for discriminated-union bypass rules; 50%+ of surveyed users reported standard mode could fully replace expert mode</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="card tl-card">
+              <div class="tl-card-head">
+                <div>
+                  <h3>A.I. Fellow</h3>
+                  <p class="org">Handshake <span class="muted">— Remote</span></p>
+                </div>
+                <div class="meta">
+                  <time class="date-range">Nov 2025 – May 2026</time>
+                </div>
+              </div>
+              <ul class="tags tags-tech">
+                <li>Python</li><li>AI/ML Evaluation</li><li>Data Quality</li><li>Multimodal Systems</li>
+              </ul>
+              <ul class="bullets">
+                <li>Improved large-scale AI model performance through high-accuracy evaluations of text, image, and audio outputs, maintaining a <strong>96%</strong> quality rate across evaluation tasks</li>
+                <li>Identified model failure modes and edge cases, delivering structured feedback that informed processing pipelines, alignment logic, and evaluation tooling</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="card tl-card">
+              <div class="tl-card-head">
+                <div>
+                  <h3>Sound Quality Benchmarking Intern</h3>
+                  <p class="org">Harman International <span class="muted">— A Samsung Company · Novi, MI</span></p>
+                </div>
+                <div class="meta">
+                  <time class="date-range">May 2025 – Aug 2025</time>
+                </div>
+              </div>
+              <ul class="tags tags-tech">
+                <li>C++</li><li>Python</li><li>SQL</li>
+              </ul>
+              <ul class="bullets">
+                <li>Reduced acoustic testing time by <strong>50%</strong> by leading development of a Python GUI automating SoundCheck sequence control via TCP/IP</li>
+                <li>Created C++ SQC files with embedded SQL to generate pink noise across targeted car audio channels and capture Frequency Response Function data</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="card tl-card">
+              <div class="tl-card-head">
+                <div>
+                  <h3>Information Technology Intern</h3>
+                  <p class="org">Camaco-Amvian <span class="muted">— Farmington Hills, MI</span></p>
+                </div>
+                <div class="meta">
+                  <time class="date-range">May 2024 – Aug 2024</time>
+                </div>
+              </div>
+              <ul class="tags tags-tech">
+                <li>Active Directory</li><li>Hyper-V</li><li>Linux</li><li>Microsoft Office</li>
+              </ul>
+              <ul class="bullets">
+                <li>Led virtualization environment setup and VM management with Hyper-V, authoring a report comparing virtualization vs. traditional computing</li>
+                <li>Migrated data to the Plex Fixed Asset module in a test environment and demonstrated the process to stakeholders for future rollout</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section reveal-section">
+        <div class="section-head">
+          <span class="section-index">03</span>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="project-head">
+              <h3>Branches</h3>
+              <time class="date-range">Aug 2026</time>
+            </div>
+            <p class="project-sub">Full-stack Trello-style project management app</p>
+            <ul class="bullets">
+              <li>Built a full-stack Kanban app with a React + TypeScript frontend, FastAPI backend, JWT authentication, and drag-and-drop ordering persisted to the backend</li>
+              <li>Deployed on AWS with the React build served via CloudFront/S3 and a containerized FastAPI backend on EC2 behind Caddy for automatic TLS</li>
+              <li>Migrated persistence from SQLite to RDS Postgres with Alembic schema migrations and environment-based configuration, removing all hardcoded credentials</li>
+            </ul>
+            <ul class="tags tags-tech">
+              <li>React</li><li>TypeScript</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li><li>AWS</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-head">
+              <h3>DriveAware Detection System</h3>
+              <time class="date-range">Oct 2025</time>
+            </div>
+            <p class="project-sub">Real-time driver drowsiness &amp; emotion monitoring</p>
+            <ul class="bullets">
+              <li>Developed a real-time driver monitoring system detecting drowsiness and emotional instability via MediaPipe eye-tracking and DeepFace emotion analysis</li>
+              <li>Optimized multithreaded processing for low-latency detection and hardware response</li>
+            </ul>
+            <ul class="tags tags-tech">
+              <li>Python</li><li>C</li><li>OpenCV</li><li>MediaPipe</li><li>DeepFace</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-head">
+              <h3>SpartanMind Game</h3>
+              <time class="date-range">Apr 2025</time>
+            </div>
+            <p class="project-sub">Mastermind-style desktop game with OOP/MVC design</p>
+            <ul class="bullets">
+              <li>Developed XML-based level loading supporting reusable assets, dynamic item placement, and scalable game logic</li>
+              <li>Implemented event-driven tile mechanics and authored 20+ unit tests validating gameplay across levels</li>
+            </ul>
+            <ul class="tags tags-tech">
+              <li>C++</li><li>GitLab</li><li>wxWidgets</li><li>XML</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section reveal-section">
+        <div class="section-head">
+          <span class="section-index">04</span>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="card skills-card">
+          <div class="skills-grid">
+            <div class="skill-block">
+              <h3>Languages</h3>
+              <ul class="tags icon-tags" data-icons="python,c,cplusplus,csharp,java,javascript,typescript,html5,css3">
+                <li data-icon="python">Python</li>
+                <li data-icon="c">C</li>
+                <li data-icon="cplusplus">C++</li>
+                <li data-icon="csharp">C#</li>
+                <li data-icon="java">Java</li>
+                <li data-icon="javascript">JavaScript</li>
+                <li data-icon="typescript">TypeScript</li>
+                <li>SQL</li>
+                <li>ARM Assembly</li>
+                <li>MATLAB</li>
+                <li data-icon="html5">HTML</li>
+                <li data-icon="css3">CSS</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3>Frameworks &amp; Platforms</h3>
+              <ul class="tags icon-tags">
+                <li data-icon="dotnet">.NET Core</li>
+                <li data-icon="nodedotjs">Node.js</li>
+                <li data-icon="react">React</li>
+                <li data-icon="angular">Angular</li>
+                <li data-icon="fastapi">FastAPI</li>
+                <li data-icon="amazonaws">AWS</li>
+                <li data-icon="postgresql">PostgreSQL</li>
+                <li data-icon="docker">Docker</li>
+                <li data-icon="linux">Linux</li>
+              </ul>
+            </div>
+            <div class="skill-block">
+              <h3>Tools &amp; Testing</h3>
+              <ul class="tags icon-tags">
+                <li data-icon="git">Git</li>
+                <li data-icon="github">GitHub</li>
+                <li data-icon="gitlab">GitLab</li>
+                <li data-icon="jasmine">Jasmine</li>
+                <li data-icon="jupyter">Jupyter</li>
+                <li data-icon="opencv">OpenCV</li>
+                <li>MediaPipe</li>
+                <li>wxWidgets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section reveal-section">
+        <div class="section-head">
+          <span class="section-index">05</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="card edu-card">
+          <div class="edu-head">
+            <div>
+              <h3>Michigan State University</h3>
+              <p class="role">Bachelor of Engineering in Computer Science</p>
+            </div>
+            <div class="meta">
+              <time class="date-range">Aug 2023 – Dec 2026</time>
+              <p class="muted loc">East Lansing, MI</p>
+            </div>
+          </div>
+          <p class="courses-label muted">Relevant Coursework</p>
+          <ul class="tags">
+            <li>Operating Systems</li>
+            <li>Algorithm Engineering</li>
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Software Engineering</li>
+            <li>Object-Oriented Software Design</li>
+            <li>Computer Organization &amp; Architecture</li>
+            <li>Artificial Intelligence</li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Aayush Jagtap • <span class="mono">Built with HTML + CSS + JavaScript</span></p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Aayush Jagtap</p>
+      <div class="footer-links">
+        <a href="tel:+12487870379">248-787-0379</a>
+        <span class="dot">•</span>
+        <a href="mailto:apj1905@gmail.com">apj1905@gmail.com</a>
+        <span class="dot">•</span>
+        <a href="https://www.linkedin.com/in/aayush-jagtap" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="https://github.com/aayushjagtap" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">↑ Back to top</a>
     </div>
   </footer>
 
