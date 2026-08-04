@@ -1,26 +1,29 @@
 /* ============ Root / Theme ============ */
+/* Light is the default (and fallback) theme; dark only applies once the
+   browser has resolved prefers-color-scheme. Keeping light as the base
+   avoids a dark flash on a cold load, before that media query settles. */
 :root{
-  --bg: #090c13;
-  --bg-2: #0d111a;
-  --panel: #131826;
-  --panel-2: #171d2d;
-  --text: #eef1f7;
-  --text-muted: #93a0b4;
-  --border: #232b3d;
+  --bg:#f6f8fc; --bg-2:#eef1f8; --panel:#ffffff; --panel-2:#f8fafc;
+  --text:#101521; --text-muted:#5b6472;
+  --border:#e4e9f2; --shadow: 0 10px 28px rgba(30,40,60,.08);
   --accent: #5eead4;
   --accent-2: #7c9eff;
   --accent-3: #f472b6;
-  --shadow: 0 10px 30px rgba(0,0,0,.45);
   --radius: 16px;
   --radius-sm: 10px;
   --maxw: 1080px;
 }
 
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: dark){
   :root{
-    --bg:#f6f8fc; --bg-2:#eef1f8; --panel:#ffffff; --panel-2:#f8fafc;
-    --text:#101521; --text-muted:#5b6472;
-    --border:#e4e9f2; --shadow: 0 10px 28px rgba(30,40,60,.08);
+    --bg: #090c13;
+    --bg-2: #0d111a;
+    --panel: #131826;
+    --panel-2: #171d2d;
+    --text: #eef1f7;
+    --text-muted: #93a0b4;
+    --border: #232b3d;
+    --shadow: 0 10px 30px rgba(0,0,0,.45);
   }
 }
 
@@ -43,10 +46,10 @@ body{
 
 /* ============ Background decor ============ */
 .bg-decor{ position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
-.orb{ position: absolute; border-radius: 50%; filter: blur(90px); opacity: .35; }
+.orb{ position: absolute; border-radius: 50%; filter: blur(90px); opacity: .18; }
 .orb-a{ width: 480px; height: 480px; top: -180px; left: -120px; background: var(--accent); }
 .orb-b{ width: 420px; height: 420px; top: 10%; right: -160px; background: var(--accent-2); }
-.orb-c{ width: 360px; height: 360px; bottom: -140px; left: 30%; background: var(--accent-3); opacity: .2; }
+.orb-c{ width: 360px; height: 360px; bottom: -140px; left: 30%; background: var(--accent-3); opacity: .1; }
 .grid-overlay{
   position: absolute; inset: 0;
   background-image:
@@ -54,9 +57,9 @@ body{
     linear-gradient(90deg, color-mix(in oklab, var(--border) 60%, transparent) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 85%);
-  opacity: .5;
+  opacity: .35;
 }
-@media (prefers-color-scheme: light){ .grid-overlay{ opacity: .35; } .orb{ opacity: .18; } }
+@media (prefers-color-scheme: dark){ .grid-overlay{ opacity: .5; } .orb{ opacity: .35; } }
 
 /* ============ Accessibility ============ */
 .skip-link{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
